@@ -1,0 +1,106 @@
+@media (max-width:767px)
+{
+    section.face h1.header1
+    {
+
+        padding-left: 70px;
+        font-size: 25px;
+
+    }
+    section.face h1.header2
+    {
+         padding-left: 20px;
+        font-size: 23px;
+    }
+    section.face p
+    {
+        color:white;
+        font-size:15px;
+        padding-top: 30px;
+        margin-left: -20px;
+    }
+   section.face button.text-center
+    {
+        
+        margin-left: 0px;
+        margin-top: 90px;
+    }
+    section.face button.second
+        {
+            display: block;
+            margin-top: 60px;
+            margin-bottom: 80px;
+            margin-left: 150px;
+            background-color: transparent;
+            color:white;
+            animation: hvr-bob 1s ease-in-out infinite;
+        }
+    section.services .active
+        {
+            margin-top: 0px;
+            transform: scale(1);
+            background-color: white;
+            
+        }
+    section.services .active p
+        {
+            color: black;
+        }
+    section.services button
+    {
+        font-size: 12px;
+    }
+    section.about-us h1
+    {
+        font-size: 25px;
+    }
+}
+@media (min-width:768px) and (max-width:991px)
+{
+    section.face h1.header1
+    {
+       
+        padding-left: 65px;
+        font-size: 0px;
+    }
+    section.face h1.header2
+    {
+        font-size: 30px;
+    }
+    section.face p
+    {
+        color:white;
+        font-size:25px;
+        padding-top: 16px;
+        margin-left: -70px;
+    }
+    section.about-us h1
+    {
+        font-size: 30px;
+    }
+}
+@media (min-width:992px) and (max-width:1199px)
+{
+    section.face h1.header1
+        {
+            
+            padding-left: 63px;
+            font-size: 40px;
+
+        }
+    section.face h1.header2
+    {
+    
+        font-size: 40px;
+    }
+    section.face p
+    {
+       
+        padding-top: 25px;
+        margin-left: -120px;
+    }
+}
+@media (min-width:1200px)
+{
+
+}
