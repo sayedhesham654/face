@@ -13,5 +13,28 @@ $(function(){
         
     });
     
+    $("section.projects div.carousel-inner").mouseenter(function (){
+       
+        $(this).find("div.carousel-caption").fadeIn();
+        
+    });
+    $("section.projects div.carousel-inner").mouseleave(function (){
+       
+        $(this).find("div.carousel-caption").fadeOut();
+        
+    });
     
+     function initialize() { 
+                var mapProp = { 
+                    center: new google.maps.LatLng(60, 60), 
+                    zoom: 5, 
+                    mapTypeId: google.maps.MapTypeId.SATELLITE  
+                }; 
+                var map = new google.maps.Map(document.getElementById("map"), mapProp);
+                var myLatLng = {lat: 41.008238, lng: 28.978359 };
+                var map = new google.maps.Map(document.getElementById('map'), { zoom: 8, center: myLatLng });
+                var marker = new google.maps.Marker({ position: myLatLng, map: map, title: 'Hello World!' });
+            } 
+
+            google.maps.event.addDomListener(window, 'load', initialize); 
 });

@@ -9,7 +9,7 @@ body
     /*background-image: linear-gradient(to right, #960000,#960000, #b30000cc, #960000);*/
     border: none;
     border-radius: 0px;
-    background-color: rgba(0,0,0,0.5)
+    background-color: rgba(0,0,0,0.9)
 }
 .navbar-default .navbar-brand
 {
@@ -424,6 +424,243 @@ section.about-us img.icon
 {
     margin-top: 40px;
     display: block;
+    width:100%;
     margin-left: 20px;
 }
 /*end section about-us*/
+/*start section projects*/
+section.projects
+{
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+section.projects h1
+{
+    padding-bottom: 50px;
+    font-size: 45px;
+    padding-bottom: 20px;
+    color: black;
+    border-bottom:10px solid #8a0505;
+    margin-bottom: 70px;
+    width:20%;
+    font-weight: bold;
+    text-shadow: 4px 4px 20px rgba(0,0,0,0.4);
+    margin-left:  15px;
+  
+    text-transform: uppercase;
+    
+}
+section.projects img
+{
+    height: 100%;
+    
+}
+section.projects div.carousel-caption
+{
+    width:60%;
+    height: 50%;
+    background-color: red;
+    margin-bottom: 130px;
+    line-height: 12;
+    font-size: 25px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 4px;
+    text-shadow: 10px 10px 15px rgba(0,0,0,0.6),
+        -10px -10px 15px rgba(0,0,0,0.6);
+    display: none;
+}
+section.projects  .carousel-indicators li
+{
+    border: 2px solid black;
+    width:15px;
+    height: 15px;
+    transition: all 0.5s ease-in-out;
+}
+section.projects .carousel-indicators .active
+{
+    background-color: brown;
+    width: 20px;
+    height: 20px;
+    
+}
+/*end section projects*/
+/*start section our clients*/
+section.our-clients
+{
+    background: url(../images/client1.jpg)no-repeat center center fixed;
+    background-size: cover;
+}
+section.our-clients h1
+{
+    padding-bottom: 50px;
+    font-size: 35px;
+    padding-bottom: 20px;
+    color: white;
+    border-bottom:10px solid #8a0505;
+    margin-bottom: 70px;
+    width:25%;
+    font-weight: bold;
+    padding-left: 20px;
+    text-shadow: 6px 6px 25px rgba(0,0,0,1);
+    margin-left:  15px;
+    text-transform: uppercase;
+    
+}
+section.our-clients div.overlay
+{
+    width:100%;
+    top:0px;
+    right: 0px;
+    background-color:rgba(0,0,0,0.9);
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+section.our-clients img
+{
+    
+    margin-top: 20px;
+}
+section.our-clients img.trust
+{
+    margin-top: 0px;
+}
+/*end section our clients*/
+/*start section news and updates*/
+section.news
+{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-image:  repeating-linear-gradient(to right,#7d0000,#8a0000);
+    border-top:2px solid white;
+    border-bottom: 2px solid white;
+}
+section.news h1
+{
+    padding-bottom: 50px;
+    font-size: 30px;
+    padding-bottom: 20px;
+    color: white;
+    border-bottom:10px solid #d0b62e;
+    margin-bottom: 70px;
+    width:27.5%;
+    font-weight: bold;
+    padding-left: 20px;
+    text-shadow: 6px 6px 25px rgba(0,0,0,1);
+    margin-left:  15px;
+    text-transform: uppercase;
+    
+}
+section.news div.box
+{
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    padding-left: 40px;
+}
+section.news a
+{
+    display: block;
+    color:#d0b62e;
+    
+}
+section.news a:hover
+{
+    cursor: pointer;
+}
+section.news span
+{
+    color: white;
+}
+section.news button
+{
+    color:black;
+    transition: all 0.3s ease-in-out;
+    background-color: ;
+    border-radius: 2px;
+}
+/*end section news and updates*/
+/*SECTION Contact*/
+section.contact
+{
+    background-color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+section.contact h1
+{
+    padding-bottom: 50px;
+    font-size: 40px;
+    padding-bottom: 20px;
+    color: black;
+    border-bottom:10px solid black;;
+    margin-bottom: 70px;
+    width:20%;
+    font-weight: bold;
+    padding-left: 20px;
+    text-shadow: 4px 4px 20px rgba(0,0,0,0.4);
+    margin-left:  15px;
+    text-transform: uppercase;
+}
+section.contact div.map
+{
+    background-color: white;
+}
+section.contact div.col-xs-12
+{
+    margin: 0px;
+    padding: 0px;
+}
+section.contact h2
+{
+    color:black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+section.contact div.box2 p{color:#444;}
+
+section.contact form
+{
+    margin-top: 50px;
+}
+section.contact form .col-md-6
+{
+    padding-left: 0px;
+    padding-right: 10px;
+}
+section.contact form input,
+section.contact form textarea
+{
+    margin-right: 10px;
+    background: transparent;
+    color:white;
+    border-radius: 0px;
+    border:none;
+    border-bottom: 3px solid black;
+    
+}
+section.contact form textarea
+{
+    resize: none;
+    height: 200px;
+    border: 3px solid black;
+}
+section.contact form input::-webkit-input-placeholder,
+section.contact form input::-webkit-textarea-placeholder
+{
+    color: black;
+}
+section.contact form button
+{
+    margin-top: 40px;
+    border-radius: 0px;
+    background-color: transparent;
+    color:black;
+    border:2px solid black;
+    font-size: 25px;
+    transition:all 0.5s ease-in-out;
+}
+section.contact form button:hover
+{
+    background-color: black;
+    border:2px solid black;
+    color:white;
+}
