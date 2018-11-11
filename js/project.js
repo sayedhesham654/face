@@ -23,8 +23,24 @@ $(function(){
         $(this).find("div.carousel-caption").fadeOut();
         
     });
-    
-     function initialize() { 
+    $(window).load(function (){
+        
+       $("div.spinner").fadeOut(1000,function (){
+           
+            $ ("body").css("overflow","auto");
+           
+           $(this).parent().fadeOut(1000,function (){
+               
+               $(this).remove();
+               
+           });
+           
+           
+       });
+        
+        
+    });
+    function initialize() { 
                 var mapProp = { 
                     center: new google.maps.LatLng(60, 60), 
                     zoom: 5, 
@@ -37,4 +53,7 @@ $(function(){
             } 
 
             google.maps.event.addDomListener(window, 'load', initialize); 
+
+    
 });
+

@@ -203,7 +203,7 @@ section.face button.second
     display: block;
     margin-top: 60px;
     margin-bottom: 80px;
-    margin-left: 65px;
+    margin-left: 60px;
     background-color: transparent;
     color:white;
     animation: hvr-bob 1s ease-in-out infinite;
@@ -253,6 +253,17 @@ section.after-face button
     width:30%;
     box-shadow: 4px 4px 40px 10px rgba(0,0,0,0.1),
         -4px -4px 40px 10px rgba(0,0,0,0.1);
+    border-radius: 0px solid #ec971f;
+}
+section.after-face button.hvr-shutter-in-vertical
+{
+    background:#ec971f;
+    border: 0px solid #ec971f;
+}
+section.after-face button.hvr-shutter-in-vertical:before
+{
+    background-color:#f0ad4e;/*hvr-shutter-in-vertical*/
+       border: 0px solid #f0ad4e;
 }
 /*end sction after face*/
 /*start section srvices*/
@@ -390,6 +401,16 @@ section.about-us button
     border-radius: 2px;
     box-shadow: 3px 3px 50px 5px rgba(0,0,0,0.2), 
         -3px -3px 50px 5px rgba(0,0,0,0.2); 
+}
+section.about-us button.hvr-shutter-out-horizontal
+{
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+section.about-us button.hvr-shutter-out-horizontal:before
+{
+    background-color: #449d44;
+    border-color: #255625;
 }
 section.about-us span
 {
@@ -532,7 +553,8 @@ section.news
     padding-bottom: 40px;
     background-image:  repeating-linear-gradient(to right,#7d0000,#8a0000);
     border-top:2px solid white;
-    border-bottom: 2px solid white;
+    border-bottom: 3px solid black;
+    
 }
 section.news h1
 {
@@ -570,6 +592,42 @@ section.news span
 {
     color: white;
 }
+section.news img
+{
+    width: 100%;
+    height: 100%;
+}
+section.news div.carousel-caption
+{
+    background-color: rgba(0,0,0,0.5);
+      border-radius: 4px;
+    
+    
+}
+section.news div.carousel-caption .box a
+{
+    display: block;
+    color: #ffd600;
+  
+}
+section.news .carousel-indicators li
+{
+    width:15px;
+    height: 15px;
+    border-radius: 50%;
+    border:2px solid black;
+    transition: all 0.5s ease-in-out;
+}
+section.news .carousel-indicators li.active
+{
+    width:20px;
+    background-color: #ffd600;
+    height: 20px;
+}
+section.news .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-prev, .carousel-control .icon-next, .glyphicon-chevron-left
+{
+    color:yellow;
+}
 section.news button
 {
     color:black;
@@ -577,6 +635,7 @@ section.news button
     background-color: ;
     border-radius: 2px;
 }
+
 /*end section news and updates*/
 /*SECTION Contact*/
 section.contact
@@ -604,10 +663,15 @@ section.contact div.map
 {
     background-color: white;
 }
-section.contact div.col-xs-12
+section.contact div.box2 div.col-md-6,
+section.contact div.box2 div.col-xs-12
 {
     margin: 0px;
     padding: 0px;
+}
+section.contact div.box2 div.col-md-6:first-of-type
+{
+    padding-right: 10px;
 }
 section.contact h2
 {
@@ -631,7 +695,7 @@ section.contact form textarea
 {
     margin-right: 10px;
     background: transparent;
-    color:white;
+    color:black;
     border-radius: 0px;
     border:none;
     border-bottom: 3px solid black;
@@ -664,3 +728,133 @@ section.contact form button:hover
     border:2px solid black;
     color:white;
 }
+section.contact form button.hvr-rectangle-in:before
+{
+    background: white;
+}
+section.contact div.box3,
+section.contact div.box4,
+section.contact div.box5,
+section.contact div.box6
+{
+    padding-left: 40px;
+    margin-bottom: 40px;
+    margin-top: 15px;
+}
+
+section.contact div.box4 span
+{
+    color: black;
+    text-decoration: underline;
+     font-weight: bold;
+}
+section.contact div.box4 a
+{
+    
+    color:#8a0505;
+    font-size: 20px;
+}
+section.contact div.box4 a:hover
+{
+    text-decoration: none;
+    cursor:pointer;
+}
+section.contact div.box5
+{
+    position: relative;
+}
+section.contact div.box5 p
+{
+    margin-bottom: 20px;
+}
+section.contact div.box5 span
+{
+    color:black;
+     font-weight: bold;
+   
+}
+section.contact div.box5 span.border
+{
+    position: absolute;
+    top: 120%;
+    left:40px;
+    background: #8a0505;
+    height: 10px;
+    border-radius: 5px;
+    width:30%;
+    display: inline-block;
+    padding-left: 40px;
+    
+}
+section.contact div.box6 p
+{
+    font-size: 25px;
+    font-weight: bold;
+    color:#8a0505;
+    margin-top: 30px;
+}
+/*end section contace*/
+/*start section footer*/
+section.footer
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #8a0505;
+    border-top:4px solid black;
+    margin-top: 40px;
+}
+
+section.footer a span i
+{
+    color: black;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    margin-left: 20px;
+}
+section.footer  span.last
+{
+    color:black;
+    font-size: 15px;
+}
+/*end section footer*/
+/*start section overlay*/
+section.overlay
+{
+    position:fixed;
+    top:0px;
+    left: 0px;
+    background: white;
+    width: 100%;
+    height: 100%;
+    z-index: 999999999999999999999999999999999;
+}
+.spinner {
+  width: 70px;
+  height: 70px;
+  background-color: #8a0505;
+   
+  margin: 300px auto;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+  0% { 
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+  } 50% { 
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+  } 100% { 
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+/*end section overlay*/
