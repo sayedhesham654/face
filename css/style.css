@@ -341,12 +341,7 @@ section.services button
     transition: all 0.5s ease-in-out;
     
 }
-section.services button:hover
-{
-    color:#bb0000;
-    border: 2px solid black;
-    background-color: black;
-}
+
 section.services button.hvr-sweep-to-top:before
 {
     background: black;

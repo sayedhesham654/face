@@ -1685,7 +1685,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #e1e1e1;
+  background: transparent;
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition-property: transform;
