@@ -132,7 +132,7 @@ section.project h2
 }
 section.project h2 span
 {
-    color: white;
+    color:white;
     font-weight: bold;
 }
 @media (max-width:767px)

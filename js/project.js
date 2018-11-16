@@ -54,7 +54,7 @@ $(function(){
 
             google.maps.event.addDomListener(window, 'load', initialize);
     
-    $(".navbar-default .navbar-nav > li > a,section.face a").click(function (){
+    $(".navbar-default .navbar-nav > li > a, section.face a").click(function (){
         
         $("html, body").animate({
             
